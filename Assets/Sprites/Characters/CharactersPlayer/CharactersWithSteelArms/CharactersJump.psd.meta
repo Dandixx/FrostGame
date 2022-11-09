@@ -143,10 +143,10 @@ TextureImporter:
       name: CharactersJump_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 4
-        width: 16
-        height: 32
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: CharactersJump_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 4
-        width: 17
-        height: 31
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: CharactersJump_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 4
-        width: 17
-        height: 31
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: CharactersJump_3
       rect:
         serializedVersion: 2
-        x: 88
-        y: 4
-        width: 17
-        height: 31
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: CharactersJump_4
       rect:
         serializedVersion: 2
-        x: 112
-        y: 4
-        width: 17
-        height: 32
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: CharactersJump_5
       rect:
         serializedVersion: 2
-        x: 137
-        y: 4
-        width: 16
-        height: 31
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: CharactersJump_6
       rect:
         serializedVersion: 2
-        x: 155
-        y: 4
-        width: 17
-        height: 31
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: CharactersJump_7
       rect:
         serializedVersion: 2
-        x: 176
-        y: 4
-        width: 17
-        height: 31
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

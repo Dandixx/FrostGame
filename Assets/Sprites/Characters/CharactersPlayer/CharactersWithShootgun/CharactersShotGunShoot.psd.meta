@@ -143,10 +143,10 @@ TextureImporter:
       name: CharactersShotGunShoot_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 213
-        width: 16
-        height: 34
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: CharactersShotGunShoot_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 213
-        width: 16
-        height: 34
+        x: 64
+        y: 448
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: CharactersShotGunShoot_2
       rect:
         serializedVersion: 2
-        x: 45
-        y: 213
-        width: 16
-        height: 34
+        x: 128
+        y: 448
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: CharactersShotGunShoot_3
       rect:
         serializedVersion: 2
-        x: 91
-        y: 214
-        width: 17
-        height: 33
+        x: 0
+        y: 384
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: CharactersShotGunShoot_4
       rect:
         serializedVersion: 2
-        x: 117
-        y: 214
-        width: 17
-        height: 33
+        x: 64
+        y: 384
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: CharactersShotGunShoot_5
       rect:
         serializedVersion: 2
-        x: 142
-        y: 214
-        width: 17
-        height: 33
+        x: 128
+        y: 384
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: CharactersShotGunShoot_6
       rect:
         serializedVersion: 2
-        x: 4
-        y: 176
-        width: 16
-        height: 33
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: CharactersShotGunShoot_7
       rect:
         serializedVersion: 2
-        x: 25
-        y: 176
-        width: 16
-        height: 33
+        x: 64
+        y: 320
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +311,10 @@ TextureImporter:
       name: CharactersShotGunShoot_8
       rect:
         serializedVersion: 2
-        x: 45
-        y: 176
-        width: 16
-        height: 33
+        x: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +332,10 @@ TextureImporter:
       name: CharactersShotGunShoot_9
       rect:
         serializedVersion: 2
-        x: 91
-        y: 175
-        width: 17
-        height: 33
+        x: 0
+        y: 256
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: CharactersShotGunShoot_10
       rect:
         serializedVersion: 2
-        x: 117
-        y: 175
-        width: 17
-        height: 33
+        x: 64
+        y: 256
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: CharactersShotGunShoot_11
       rect:
         serializedVersion: 2
-        x: 142
-        y: 175
-        width: 17
-        height: 33
+        x: 128
+        y: 256
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +395,10 @@ TextureImporter:
       name: CharactersShotGunShoot_12
       rect:
         serializedVersion: 2
-        x: 4
-        y: 138
-        width: 16
-        height: 33
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,10 +416,10 @@ TextureImporter:
       name: CharactersShotGunShoot_13
       rect:
         serializedVersion: 2
-        x: 25
-        y: 138
-        width: 16
-        height: 33
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +437,10 @@ TextureImporter:
       name: CharactersShotGunShoot_14
       rect:
         serializedVersion: 2
-        x: 46
-        y: 138
-        width: 16
-        height: 33
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: CharactersShotGunShoot_15
       rect:
         serializedVersion: 2
-        x: 3
-        y: 101
-        width: 17
-        height: 33
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: CharactersShotGunShoot_16
       rect:
         serializedVersion: 2
-        x: 24
-        y: 101
-        width: 17
-        height: 33
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,10 +500,10 @@ TextureImporter:
       name: CharactersShotGunShoot_17
       rect:
         serializedVersion: 2
-        x: 46
-        y: 101
-        width: 17
-        height: 33
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +521,10 @@ TextureImporter:
       name: CharactersShotGunShoot_18
       rect:
         serializedVersion: 2
-        x: 4
-        y: 62
-        width: 16
-        height: 34
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,10 +542,10 @@ TextureImporter:
       name: CharactersShotGunShoot_19
       rect:
         serializedVersion: 2
-        x: 25
-        y: 62
-        width: 16
-        height: 34
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -563,10 +563,10 @@ TextureImporter:
       name: CharactersShotGunShoot_20
       rect:
         serializedVersion: 2
-        x: 48
-        y: 62
-        width: 16
-        height: 34
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,10 +584,10 @@ TextureImporter:
       name: CharactersShotGunShoot_21
       rect:
         serializedVersion: 2
-        x: 4
-        y: 27
-        width: 16
-        height: 33
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -605,10 +605,10 @@ TextureImporter:
       name: CharactersShotGunShoot_22
       rect:
         serializedVersion: 2
-        x: 25
-        y: 27
-        width: 16
-        height: 33
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -626,10 +626,10 @@ TextureImporter:
       name: CharactersShotGunShoot_23
       rect:
         serializedVersion: 2
-        x: 48
-        y: 27
-        width: 16
-        height: 33
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

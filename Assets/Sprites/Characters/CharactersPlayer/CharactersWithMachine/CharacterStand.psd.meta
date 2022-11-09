@@ -143,10 +143,10 @@ TextureImporter:
       name: CharacterStand_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 210
-        width: 17
-        height: 34
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: CharacterStand_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 210
-        width: 17
-        height: 33
+        x: 64
+        y: 448
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: CharacterStand_2
       rect:
         serializedVersion: 2
-        x: 62
-        y: 210
-        width: 17
-        height: 33
+        x: 128
+        y: 448
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: CharacterStand_3
       rect:
         serializedVersion: 2
-        x: 87
-        y: 210
-        width: 17
-        height: 33
+        x: 192
+        y: 448
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: CharacterStand_4
       rect:
         serializedVersion: 2
-        x: 122
-        y: 210
-        width: 19
-        height: 33
+        x: 0
+        y: 384
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: CharacterStand_5
       rect:
         serializedVersion: 2
-        x: 150
-        y: 210
-        width: 19
-        height: 32
+        x: 64
+        y: 384
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: CharacterStand_6
       rect:
         serializedVersion: 2
-        x: 176
-        y: 210
-        width: 19
-        height: 32
+        x: 128
+        y: 384
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: CharacterStand_7
       rect:
         serializedVersion: 2
-        x: 199
-        y: 210
-        width: 19
-        height: 32
+        x: 192
+        y: 384
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +311,10 @@ TextureImporter:
       name: CharacterStand_8
       rect:
         serializedVersion: 2
-        x: 14
-        y: 171
-        width: 17
-        height: 33
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +332,10 @@ TextureImporter:
       name: CharacterStand_9
       rect:
         serializedVersion: 2
-        x: 38
-        y: 171
-        width: 17
-        height: 32
+        x: 64
+        y: 320
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: CharacterStand_10
       rect:
         serializedVersion: 2
-        x: 62
-        y: 171
-        width: 17
-        height: 32
+        x: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: CharacterStand_11
       rect:
         serializedVersion: 2
-        x: 87
-        y: 171
-        width: 17
-        height: 32
+        x: 192
+        y: 320
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +395,10 @@ TextureImporter:
       name: CharacterStand_12
       rect:
         serializedVersion: 2
-        x: 122
-        y: 171
-        width: 19
-        height: 33
+        x: 0
+        y: 256
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,10 +416,10 @@ TextureImporter:
       name: CharacterStand_13
       rect:
         serializedVersion: 2
-        x: 148
-        y: 171
-        width: 19
-        height: 32
+        x: 64
+        y: 256
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +437,10 @@ TextureImporter:
       name: CharacterStand_14
       rect:
         serializedVersion: 2
-        x: 176
-        y: 171
-        width: 19
-        height: 32
+        x: 128
+        y: 256
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: CharacterStand_15
       rect:
         serializedVersion: 2
-        x: 199
-        y: 171
-        width: 19
-        height: 32
+        x: 192
+        y: 256
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: CharacterStand_16
       rect:
         serializedVersion: 2
-        x: 14
-        y: 132
-        width: 17
-        height: 33
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,10 +500,10 @@ TextureImporter:
       name: CharacterStand_17
       rect:
         serializedVersion: 2
-        x: 38
-        y: 132
-        width: 17
-        height: 32
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +521,10 @@ TextureImporter:
       name: CharacterStand_18
       rect:
         serializedVersion: 2
-        x: 62
-        y: 132
-        width: 17
-        height: 32
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,10 +542,10 @@ TextureImporter:
       name: CharacterStand_19
       rect:
         serializedVersion: 2
-        x: 87
-        y: 132
-        width: 17
-        height: 32
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -563,10 +563,10 @@ TextureImporter:
       name: CharacterStand_20
       rect:
         serializedVersion: 2
-        x: 14
-        y: 93
-        width: 19
-        height: 33
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,10 +584,10 @@ TextureImporter:
       name: CharacterStand_21
       rect:
         serializedVersion: 2
-        x: 38
-        y: 93
-        width: 19
-        height: 32
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -605,10 +605,10 @@ TextureImporter:
       name: CharacterStand_22
       rect:
         serializedVersion: 2
-        x: 62
-        y: 93
-        width: 19
-        height: 32
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -626,10 +626,10 @@ TextureImporter:
       name: CharacterStand_23
       rect:
         serializedVersion: 2
-        x: 87
-        y: 93
-        width: 19
-        height: 32
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -647,10 +647,10 @@ TextureImporter:
       name: CharacterStand_24
       rect:
         serializedVersion: 2
-        x: 14
-        y: 53
-        width: 17
-        height: 34
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,10 +668,10 @@ TextureImporter:
       name: CharacterStand_25
       rect:
         serializedVersion: 2
-        x: 38
-        y: 53
-        width: 17
-        height: 33
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -689,10 +689,10 @@ TextureImporter:
       name: CharacterStand_26
       rect:
         serializedVersion: 2
-        x: 65
-        y: 53
-        width: 17
-        height: 33
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -710,10 +710,10 @@ TextureImporter:
       name: CharacterStand_27
       rect:
         serializedVersion: 2
-        x: 89
-        y: 53
-        width: 17
-        height: 33
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -731,10 +731,10 @@ TextureImporter:
       name: CharacterStand_28
       rect:
         serializedVersion: 2
-        x: 14
-        y: 14
-        width: 17
-        height: 33
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -752,10 +752,10 @@ TextureImporter:
       name: CharacterStand_29
       rect:
         serializedVersion: 2
-        x: 38
-        y: 14
-        width: 17
-        height: 32
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -773,10 +773,10 @@ TextureImporter:
       name: CharacterStand_30
       rect:
         serializedVersion: 2
-        x: 65
-        y: 14
-        width: 17
-        height: 32
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -794,10 +794,10 @@ TextureImporter:
       name: CharacterStand_31
       rect:
         serializedVersion: 2
-        x: 89
-        y: 14
-        width: 17
-        height: 32
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

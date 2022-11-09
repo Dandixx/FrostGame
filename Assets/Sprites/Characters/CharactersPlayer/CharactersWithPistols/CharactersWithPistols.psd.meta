@@ -143,10 +143,10 @@ TextureImporter:
       name: CharactersWithPistols_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 8
-        width: 12
-        height: 34
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: CharactersWithPistols_1
       rect:
         serializedVersion: 2
-        x: 59
-        y: 8
-        width: 12
-        height: 33
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: CharactersWithPistols_2
       rect:
         serializedVersion: 2
-        x: 78
-        y: 8
-        width: 12
-        height: 33
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: CharactersWithPistols_3
       rect:
         serializedVersion: 2
-        x: 99
-        y: 8
-        width: 14
-        height: 33
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: CharactersWithPistols_4
       rect:
         serializedVersion: 2
-        x: 120
-        y: 8
-        width: 12
-        height: 34
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: CharactersWithPistols_5
       rect:
         serializedVersion: 2
-        x: 141
-        y: 8
-        width: 12
-        height: 33
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: CharactersWithPistols_6
       rect:
         serializedVersion: 2
-        x: 164
-        y: 8
-        width: 14
-        height: 33
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: CharactersWithPistols_7
       rect:
         serializedVersion: 2
-        x: 185
-        y: 8
-        width: 14
-        height: 33
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -143,10 +143,10 @@ TextureImporter:
       name: CharactersWithShotGun_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 8
-        width: 16
-        height: 34
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: CharactersWithShotGun_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 8
-        width: 16
-        height: 33
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: CharactersWithShotGun_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 8
-        width: 16
-        height: 33
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: CharactersWithShotGun_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 8
-        width: 17
-        height: 33
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: CharactersWithShotGun_4
       rect:
         serializedVersion: 2
-        x: 124
-        y: 8
-        width: 16
-        height: 34
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: CharactersWithShotGun_5
       rect:
         serializedVersion: 2
-        x: 148
-        y: 8
-        width: 16
-        height: 33
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: CharactersWithShotGun_6
       rect:
         serializedVersion: 2
-        x: 172
-        y: 8
-        width: 17
-        height: 33
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: CharactersWithShotGun_7
       rect:
         serializedVersion: 2
-        x: 197
-        y: 8
-        width: 17
-        height: 33
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

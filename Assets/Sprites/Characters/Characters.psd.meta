@@ -143,10 +143,10 @@ TextureImporter:
       name: Characters_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 8
-        width: 13
-        height: 34
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: Characters_1
       rect:
         serializedVersion: 2
-        x: 58
-        y: 8
-        width: 13
-        height: 33
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: Characters_2
       rect:
         serializedVersion: 2
-        x: 77
-        y: 8
-        width: 13
-        height: 33
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: Characters_3
       rect:
         serializedVersion: 2
-        x: 99
-        y: 8
-        width: 13
-        height: 33
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: Characters_4
       rect:
         serializedVersion: 2
-        x: 119
-        y: 8
-        width: 13
-        height: 34
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: Characters_5
       rect:
         serializedVersion: 2
-        x: 140
-        y: 8
-        width: 13
-        height: 33
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: Characters_6
       rect:
         serializedVersion: 2
-        x: 164
-        y: 8
-        width: 13
-        height: 33
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: Characters_7
       rect:
         serializedVersion: 2
-        x: 185
-        y: 8
-        width: 13
-        height: 33
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
