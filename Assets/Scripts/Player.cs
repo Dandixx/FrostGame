@@ -8,7 +8,7 @@ public class Player : Character
 
     void Start()
     {
-        _anim = gameObject.GetComponent<Animator>();
+        _currentAnim = gameObject.GetComponent<Animator>();
     }
 
     void Update()

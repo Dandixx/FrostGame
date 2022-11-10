@@ -7,7 +7,7 @@ public  class Character : MonoBehaviour
     [SerializeField] private int _hp = 5;
     [SerializeField] private int _damage = 3;
     [SerializeField] private float _movingDistance = 1.4f;
-    
+    [SerializeField] protected RuntimeAnimatorController[] _currentController;
     private float _speed = 1f; // Скорость движение к врагу
 
     protected Vector3 _targetPosition; // позиция для перемещения
@@ -18,7 +18,9 @@ public  class Character : MonoBehaviour
     protected bool _moving = false; // Переменная, проверяющая в данный момент находиться ли в движении персонаж
     public Character enemy;
 
-    protected Animator _anim;
+    protected Animator _currentAnim;
+    
+    
 
 
     public void TakeDamage( int damage) // метод, который наносит урон
@@ -35,8 +37,8 @@ public  class Character : MonoBehaviour
     {
       _startingPosition = gameObject.transform.position;
       _targetPosition = new Vector3(_movingDistance, gameObject.transform.position.y);
-       _anim = gameObject.GetComponent<Animator>();
-
+       _currentAnim = gameObject.GetComponent<Animator>();
+        
          
     }
     private void Update()
@@ -53,15 +55,16 @@ public  class Character : MonoBehaviour
     {
         if (gameObject.transform.position != _targetPosition)
         {
+
             _moving = true;
-            _anim.SetInteger("Controller", 1);
+           _currentAnim.SetInteger("Controller", 1);
             gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, _targetPosition, _speed * Time.deltaTime);
 
         }
         else if (_targetPosition == _startingPosition && gameObject.transform.position == _startingPosition)
         {
             _moving = false;
-            _anim.SetInteger("Controller", 0);
+            _currentAnim.SetInteger("Controller", 0);
             _targetPosition = _currentPosition;
 
         }
@@ -70,10 +73,12 @@ public  class Character : MonoBehaviour
             _moving = false;
             _currentPosition = _targetPosition;
             _targetPosition = _startingPosition;
-            _anim.SetInteger("Controller", 0);
+            _currentAnim.SetInteger("Controller", 0);
 
         }
 
     }
 
 }
+
+

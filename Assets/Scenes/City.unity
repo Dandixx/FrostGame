@@ -565,6 +565,7 @@ MonoBehaviour:
   _hp: 5
   _damage: 3
   _movingDistance: 1.4
+  _currentController: []
   enemy: {fileID: 0}
 --- !u!50 &202499179
 Rigidbody2D:
@@ -1154,6 +1155,7 @@ GameObject:
   - component: {fileID: 424106892}
   - component: {fileID: 424106891}
   - component: {fileID: 424106890}
+  - component: {fileID: 424106893}
   m_Layer: 0
   m_Name: Characters_0
   m_TagString: Untagged
@@ -1169,9 +1171,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424106889}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2eb6feaba376bdb408f72540341744cc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 09415672514a7fc4da6c6a029511b64e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1248,6 +1250,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &424106893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424106889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c011947e06eeda14d89de038b7424fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hp: 5
+  _damage: 3
+  _movingDistance: 1.4
+  _currentController: []
+  enemy: {fileID: 0}
 --- !u!1 &479484312
 GameObject:
   m_ObjectHideFlags: 0
