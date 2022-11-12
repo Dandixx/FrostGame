@@ -7,7 +7,11 @@ public  class Character : MonoBehaviour
     [SerializeField] private int _hp = 5;
     [SerializeField] private int _damage = 3;
     [SerializeField] private float _movingDistance = 1.4f;
-    [SerializeField] protected RuntimeAnimatorController[] _currentController;
+
+    public CharacterAnimationController _animationController;
+
+    protected CharacterInventory _inventory;
+
     private float _speed = 1f; // Скорость движение к врагу
 
     protected Vector3 _targetPosition; // позиция для перемещения
@@ -37,9 +41,28 @@ public  class Character : MonoBehaviour
     {
       _startingPosition = gameObject.transform.position;
       _targetPosition = new Vector3(_movingDistance, gameObject.transform.position.y);
-       _currentAnim = gameObject.GetComponent<Animator>();
-        
-         
+      _currentAnim = gameObject.GetComponent<Animator>();
+        if (_inventory.haveMachine == true)
+        {
+            _currentAnim.runtimeAnimatorController = _animationController.characterWithMachine;
+
+        }
+        if (_inventory.haveShootgun == true)
+        {
+            _currentAnim.runtimeAnimatorController = _animationController.characterWithShootgun;
+
+        }
+        if (_inventory.havePistol == true)
+        {
+            _currentAnim.runtimeAnimatorController = _animationController.characterWithPistol;
+
+        }
+        if (_inventory.haveSteelArms == true)
+        {
+            _currentAnim.runtimeAnimatorController = _animationController.characterWithSteelArms;
+
+        }
+
     }
     private void Update()
     {
@@ -81,4 +104,20 @@ public  class Character : MonoBehaviour
 
 }
 
+
+
+[System.Serializable]
+public struct CharacterAnimationController
+{
+    public RuntimeAnimatorController characterWithMachine; // Персонаж с автоматом
+
+    public RuntimeAnimatorController characterWithoutWeapon; // Персонаж без оружия
+
+    public RuntimeAnimatorController characterWithPistol; // Персонаж с пистолетом
+
+    public RuntimeAnimatorController characterWithShootgun; // Персонаж с дробовиком
+
+    public RuntimeAnimatorController characterWithSteelArms; // Персонаж с холодным оружием
+
+}
 
