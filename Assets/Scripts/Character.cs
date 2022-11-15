@@ -40,38 +40,50 @@ public  class Character : MonoBehaviour
     public virtual void Start()
     {
       _startingPosition = gameObject.transform.position;
-      _targetPosition = new Vector3(_movingDistance, gameObject.transform.position.y);
+      _targetPosition = new Vector3(_movingDistance, gameObject.transform.position.y); // Позиция для перемещения
       _currentAnim = gameObject.GetComponent<Animator>();
-        if (_inventory.haveMachine == true)
+        if (_animationController.characterWithMachine != null)
         {
             _currentAnim.runtimeAnimatorController = _animationController.characterWithMachine;
+            gameObject.GetComponent<Animator>().runtimeAnimatorController = _currentAnim.runtimeAnimatorController;
+            _currentAnim.SetInteger("Controller", 0);
+
 
         }
-        if (_inventory.haveShootgun == true)
+        else if (_animationController.characterWithShootgun != null)
         {
             _currentAnim.runtimeAnimatorController = _animationController.characterWithShootgun;
+            gameObject.GetComponent<Animator>().runtimeAnimatorController = _currentAnim.runtimeAnimatorController;
+            _currentAnim.SetInteger("Controller", 0);
 
         }
-        if (_inventory.havePistol == true)
+         else if (_animationController.characterWithPistol != null)
         {
             _currentAnim.runtimeAnimatorController = _animationController.characterWithPistol;
-
+            gameObject.GetComponent<Animator>().runtimeAnimatorController = _currentAnim.runtimeAnimatorController;
+            _currentAnim.SetInteger("Controller", 0);
         }
-        if (_inventory.haveSteelArms == true)
+         else if (_animationController.characterWithSteelArms != null)
         {
             _currentAnim.runtimeAnimatorController = _animationController.characterWithSteelArms;
-
+            gameObject.GetComponent<Animator>().runtimeAnimatorController = _currentAnim.runtimeAnimatorController;
+            _currentAnim.SetInteger("Controller", 0);
         }
 
     }
     private void Update()
     {
 
+
         if (Input.GetKeyDown(KeyCode.Space) || _moving )
         {
             OnMove();
            
 
+        }
+        else
+        {
+            _currentAnim.SetInteger("Controller", 0);
         }
     }
     public virtual void OnMove() // Метод движения к врагу
