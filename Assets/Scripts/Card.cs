@@ -13,6 +13,8 @@ public class Card : MonoBehaviour
     private float _objectScale = 1.05f; // Размер карты при наведении на мышь
     private float _currentRotate = -15f;
 
+    [SerializeField] int damage;
+
     
 
 
@@ -47,11 +49,22 @@ public class Card : MonoBehaviour
 
     private void OnMouseDown()
     {
-        _objectScale = 1.75f;
-        transform.position = Vector2.Lerp(_afterClickPosition, _startPosition, _movingDistance);
-        gameObject.transform.Rotate(0f, 0f, -_currentRotate);
-        transform.localScale = new Vector2(_objectScale, _objectScale);
-        gameObject.GetComponent<SpriteRenderer>().sprite = _newSprite;
+        if (_objectScale != 1.75f)
+        {
+            _objectScale = 1.75f;
+            transform.position = Vector2.Lerp(_afterClickPosition, _startPosition, _movingDistance);
+            gameObject.transform.Rotate(0f, 0f, -_currentRotate);
+            transform.localScale = new Vector2(_objectScale, _objectScale);
+            gameObject.GetComponent<SpriteRenderer>().sprite = _newSprite;
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Destroy(gameObject);
+            GameController.isAttack = true;
+            GameController.cardDamage = damage;
+            
+        }
         
     }
 

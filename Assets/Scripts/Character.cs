@@ -5,14 +5,14 @@ using UnityEngine;
 public  class Character : MonoBehaviour
 {
     [SerializeField] private int _hp = 5;
-    [SerializeField] private int _damage = 3;
-    [SerializeField] private float _movingDistance = 1.4f;
+    [SerializeField] private int _damage;
+    [SerializeField] private float _movingDistance = 1f;
 
     public CharacterAnimationController _animationController;
 
     protected CharacterInventory _inventory;
 
-    private float _speed = 1f; // —корость движение к врагу
+    private float _speed = 2.5f; // —корость движение к врагу
 
     protected Vector3 _targetPosition; // позици€ дл€ перемещени€
     protected Vector3 _startingPosition; // стартова€ позици€
@@ -20,7 +20,9 @@ public  class Character : MonoBehaviour
 
 
     protected bool _moving = false; // ѕеременна€, провер€юща€ в данный момент находитьс€ ли в движении персонаж
-    public Character enemy;
+    
+    private  Character[] _enemies;
+    private List<Character> _enemiesList = new List<Character>();
 
     protected Animator _currentAnim;
     
@@ -33,14 +35,13 @@ public  class Character : MonoBehaviour
         {
             _hp -= damage;
             if (_hp <= 0)
-                GameObject.Destroy(gameObject);
+                Destroy(gameObject);
         }
     }
 
     public virtual void Start()
     {
       _startingPosition = gameObject.transform.position;
-      _targetPosition = new Vector3(_movingDistance, gameObject.transform.position.y); // ѕозици€ дл€ перемещени€
       _currentAnim = gameObject.GetComponent<Animator>();
         if (_animationController.characterWithMachine != null)
         {
@@ -70,20 +71,50 @@ public  class Character : MonoBehaviour
             _currentAnim.SetInteger("Controller", 0);
         }
 
+      
+        _enemies = FindObjectsOfType<Character>();
+
+        if (gameObject.tag == "Player")
+        {
+            for (int i = 0; i < _enemies.Length; i++)
+            {
+
+                if (_enemies[i].tag == "Enemy")
+                {
+                    _enemiesList.Add(_enemies[i]);
+
+                }
+
+            }
+
+        }
+        else if (gameObject.tag == "Enemy")
+        {
+            _movingDistance = -_movingDistance;
+
+            for (int i = 0; i < _enemies.Length; i++)
+            {
+                if (_enemies[i].tag == "Player")
+                {
+                    _enemiesList.Add(_enemies[i]);
+
+                }
+
+            }
+
+        }
+        _targetPosition = new Vector3(_movingDistance, gameObject.transform.position.y); // ѕозици€ дл€ перемещени€
+
     }
     private void Update()
     {
 
 
-        if (Input.GetKeyDown(KeyCode.Space) || _moving )
+        if (Input.GetKeyDown(KeyCode.Space) || _moving || GameController.isAttack == true )
         {
             OnMove();
            
 
-        }
-        else
-        {
-            _currentAnim.SetInteger("Controller", 0);
         }
     }
     public virtual void OnMove() // ћетод движени€ к врагу
@@ -95,9 +126,11 @@ public  class Character : MonoBehaviour
            _currentAnim.SetInteger("Controller", 1);
             gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, _targetPosition, _speed * Time.deltaTime);
 
+
         }
         else if (_targetPosition == _startingPosition && gameObject.transform.position == _startingPosition)
         {
+            GameController.isAttack = false;
             _moving = false;
             _currentAnim.SetInteger("Controller", 0);
             _targetPosition = _currentPosition;
@@ -108,12 +141,20 @@ public  class Character : MonoBehaviour
             _moving = false;
             _currentPosition = _targetPosition;
             _targetPosition = _startingPosition;
-            _currentAnim.SetInteger("Controller", 0);
+            _currentAnim.SetInteger("Controller", 2);
+            GameController.isAttack = false;
+            StartCoroutine(Attackable());
 
         }
 
     }
+    IEnumerator Attackable()
+    {
+        yield return new WaitForSeconds(3f);
+        GameController.currentCharacter.TakeDamage(GameController.cardDamage);
+        GameController.isAttack = true;
 
+    }
 }
 
 
