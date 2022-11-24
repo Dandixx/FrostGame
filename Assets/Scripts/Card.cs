@@ -6,17 +6,16 @@ public class Card : MonoBehaviour
 {
     [SerializeField] private Sprite _newSprite; // спрайт после клика мыши
     [SerializeField] private Sprite _oldSprite; // изначальный спрайт
+
     private Vector2 _startPosition; 
     private Vector2 _endPosition; // позиция после наведения курсора
     private Vector2 _afterClickPosition = new Vector2 (0f,0f);
+
     private float _movingDistance = 0.05f; // Дистанция перемещения при наведении на мышь
     private float _objectScale = 1.05f; // Размер карты при наведении на мышь
     private float _currentRotate = -15f;
 
     [SerializeField] int damage;
-
-    
-
 
 
     private void Start()
@@ -56,16 +55,15 @@ public class Card : MonoBehaviour
             gameObject.transform.Rotate(0f, 0f, -_currentRotate);
             transform.localScale = new Vector2(_objectScale, _objectScale);
             gameObject.GetComponent<SpriteRenderer>().sprite = _newSprite;
-            Time.timeScale = 0;
+            BattleController.hasClicked = true;
         }
         else
         {
             Destroy(gameObject);
-            GameController.isAttack = true;
-            GameController.cardDamage = damage;
-            
-        }
-        
+            BattleController.isAttack = true;
+            BattleController.cardDamage = damage;
+            BattleController.hasClicked = false;   
+        }       
     }
 
 

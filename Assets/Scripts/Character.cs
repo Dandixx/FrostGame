@@ -10,9 +10,8 @@ public  class Character : MonoBehaviour
 
     public CharacterAnimationController _animationController;
 
-    protected CharacterInventory _inventory;
-
     private float _speed = 2.5f; // Скорость движение к врагу
+    private float _timer = 2f;
 
     protected Vector3 _targetPosition; // позиция для перемещения
     protected Vector3 _startingPosition; // стартовая позиция
@@ -20,12 +19,12 @@ public  class Character : MonoBehaviour
 
 
     protected bool _moving = false; // Переменная, проверяющая в данный момент находиться ли в движении персонаж
-    
-    private  Character[] _enemies;
-    private List<Character> _enemiesList = new List<Character>();
 
-    protected Animator _currentAnim;
     
+    private  Character[] _enemies; // массив врагов для присвоенмя в список
+    private List<Character> _enemiesList = new List<Character>(); // список врагов, которых нужно атаковать
+
+    protected Animator _currentAnim; // Текущая анимация персонажа
     
 
 
@@ -34,8 +33,23 @@ public  class Character : MonoBehaviour
         if (_hp > 0)
         {
             _hp -= damage;
+
             if (_hp <= 0)
-                Destroy(gameObject);
+            {
+                if (gameObject.tag == "Player")
+                {
+                    BattleController.playerPeople.Remove(gameObject.GetComponent<Character>());
+                    Destroy(gameObject);
+
+                }
+                if (gameObject.tag == "Enemy")
+                {
+                    BattleController.enemiesPeople.Remove(gameObject.GetComponent<Character>());
+                    Destroy(gameObject);
+
+                }
+                _enemiesList.Remove(this);
+            }
         }
     }
 
@@ -48,15 +62,12 @@ public  class Character : MonoBehaviour
             _currentAnim.runtimeAnimatorController = _animationController.characterWithMachine;
             gameObject.GetComponent<Animator>().runtimeAnimatorController = _currentAnim.runtimeAnimatorController;
             _currentAnim.SetInteger("Controller", 0);
-
-
         }
         else if (_animationController.characterWithShootgun != null)
         {
             _currentAnim.runtimeAnimatorController = _animationController.characterWithShootgun;
             gameObject.GetComponent<Animator>().runtimeAnimatorController = _currentAnim.runtimeAnimatorController;
             _currentAnim.SetInteger("Controller", 0);
-
         }
          else if (_animationController.characterWithPistol != null)
         {
@@ -74,7 +85,7 @@ public  class Character : MonoBehaviour
       
         _enemies = FindObjectsOfType<Character>();
 
-        if (gameObject.tag == "Player")
+        if (gameObject.tag == "Player") // Если на данный момент персонаж - персонаж игрока, то находим врагов
         {
             for (int i = 0; i < _enemies.Length; i++)
             {
@@ -82,13 +93,14 @@ public  class Character : MonoBehaviour
                 if (_enemies[i].tag == "Enemy")
                 {
                     _enemiesList.Add(_enemies[i]);
+                    //print(_enemies[i]);
 
                 }
 
             }
 
         }
-        else if (gameObject.tag == "Enemy")
+        else if (gameObject.tag == "Enemy") // Если на данный момент персонаж - враг , то находим игроков
         {
             _movingDistance = -_movingDistance;
 
@@ -108,33 +120,30 @@ public  class Character : MonoBehaviour
     }
     private void Update()
     {
-
-
-        if (Input.GetKeyDown(KeyCode.Space) || _moving || GameController.isAttack == true )
+        if (Input.GetKeyDown(KeyCode.Space) || _moving || BattleController.isAttack == true  )
+        {                 
+                BattleController.isAttack = false;
+                BattleController.characterTern.OnMove();
+        }
+        if (Input.GetMouseButtonDown(0) && gameObject.GetComponent<SpriteRenderer>().color == Color.red && BattleController.hasClicked == true) // выбор вражеского персонажа
         {
-            OnMove();
-           
-
+            BattleController.currentCharacter = gameObject.GetComponent<Character>();
         }
     }
     public virtual void OnMove() // Метод движения к врагу
     {
         if (gameObject.transform.position != _targetPosition)
         {
-
             _moving = true;
            _currentAnim.SetInteger("Controller", 1);
             gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, _targetPosition, _speed * Time.deltaTime);
 
-
         }
         else if (_targetPosition == _startingPosition && gameObject.transform.position == _startingPosition)
         {
-            GameController.isAttack = false;
             _moving = false;
             _currentAnim.SetInteger("Controller", 0);
             _targetPosition = _currentPosition;
-
         }
         else if (gameObject.transform.position == _targetPosition )
         {
@@ -142,17 +151,65 @@ public  class Character : MonoBehaviour
             _currentPosition = _targetPosition;
             _targetPosition = _startingPosition;
             _currentAnim.SetInteger("Controller", 2);
-            GameController.isAttack = false;
-            StartCoroutine(Attackable());
+            StartCoroutine(Attackable());          
+        }
+    }
+    private void OnMouseEnter()
+    {
+        if (BattleController.hasClicked == true && gameObject.tag !="Player")
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+    }
+    private void OnMouseExit()
+    {
+        gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
+    IEnumerator Attackable()
+    {       
+        yield return new WaitForSeconds(_timer); // ожидание для проиграша анимации
+       
+        if (BattleController.battleState == BattleState.PLAYERTURN)
+        {
+            foreach (Character character in _enemiesList)
+            {
+                if (BattleController.currentCharacter == character)
+                {
+                    BattleController.currentCharacter.TakeDamage(BattleController.cardDamage);
+                }
+                if (BattleController.currentCharacter == null)
+                {
+                    BattleController.currentCharacter = BattleController.enemiesPeople[Random.Range(0, BattleController.enemiesPeople.Count)];
+                    BattleController.currentCharacter.TakeDamage(BattleController.cardDamage);
+                }
+            }
+
+            yield return new WaitForSeconds(_timer);
+            _moving = true;
+
+            BattleController.battleState = BattleState.ENEMYTURN;
+            yield return new WaitForSeconds(_timer); // ожидание для того, чтобы персонаж вернулся на свою позицию
+
+            BattleController.changeCharacterTern = true; // смена персонажа на противоположную команду
+
+            yield return new WaitForSeconds(_timer); // ожидание для того, чтобы персонаж вернулся на свою позицию
+            print("Next squad");
+            BattleController.isAttack = true;
+        }
+        else if (BattleController.battleState == BattleState.ENEMYTURN)
+        {
+
+            BattleController.playerPeople[Random.Range(0, BattleController.playerPeople.Count)].TakeDamage(BattleController.cardDamage);
+            
+            yield return new WaitForSeconds(_timer);
+            _moving = true;
+
+            BattleController.battleState = BattleState.PLAYERTURN;      
+           yield return new WaitForSeconds(_timer); // ожидание для того, чтобы персонаж вернулся на свою позици
+            BattleController.changeCharacterTern = true; // смена персонажа на противоположную команду
+            yield return new WaitForSeconds(_timer); // ожидание для того, чтобы персонаж вернулся на свою позицию
+            print("Player squad");
 
         }
-
-    }
-    IEnumerator Attackable()
-    {
-        yield return new WaitForSeconds(3f);
-        GameController.currentCharacter.TakeDamage(GameController.cardDamage);
-        GameController.isAttack = true;
 
     }
 }
